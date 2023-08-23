@@ -1,9 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --dark-blue: #0a2640;
+    --dark-blue-drop: rgba(10, 38, 64, 0.8);
+    --green: #65e4a3;
+    --light-green: #009d10;
+    --yellow: #ecaa00;
+    --orange: #fc5b00;
+    --black: #000000;
+    --white: #ffffff;
+    --primary-gray: #777;
+    --secondary-gray: #c4c4c4;
+    --tertiary-gray: #95abbc;
+    --light-gray: #f1f1f1;
+    --blue: #0dbbfc;
+    --box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.08);
+}
+
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+p {
+    margin: 0;
 }
 
 code {
