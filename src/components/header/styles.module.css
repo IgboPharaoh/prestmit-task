@@ -1,0 +1,24 @@
+.headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerRightSection {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.navlinks {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+.navlinks:hover {
+    text-decoration: underline;
+}
