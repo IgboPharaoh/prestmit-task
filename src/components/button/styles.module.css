@@ -1,0 +1,7 @@
+.buttonWrapper {
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    cursor: pointer;
+    white-space: nowrap;
+}
