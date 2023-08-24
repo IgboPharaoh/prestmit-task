@@ -1,0 +1,172 @@
+.blogSectionWrapper {
+    padding: 120px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.blogTopSectionWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.blogTopSectionImageWrapper {
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogTopSectionImage {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 24px;
+}
+
+.blogTopSectionBottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.blogTopSectionBottomText {
+    color: var(--black);
+    max-width: 500px;
+    font-size: 36px;
+}
+
+.bloglistsCompWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Blog bottom section */
+.blogBottomSection {
+    display: flex;
+    flex-direction: column;
+    gap: 77px;
+}
+
+.bottomSectionTextWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.bottomSectionSubText {
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--primary-gray);
+}
+
+.bottomSectionHeadingText {
+    color: var(--black);
+    max-width: 842px;
+}
+
+.blogCardsWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionButtonWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 84px;
+}
+
+/* Blog Card */
+.blogCardWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 300px;
+    border-radius: 24px;
+}
+
+.blogCardContentImageWrapper {
+    height: 209px;
+    width: 300px;
+}
+
+.blogCardContentImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-width: 300px;
+    border-radius: 24px;
+}
+
+.spanNDateTextWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.blogCardSpanText {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--dark-blue);
+}
+
+.blogCardDate {
+    font-weight: 400;
+    color: var(--primary-gray);
+}
+
+.blogCardContentText {
+    color: var(--black);
+    font-size: 20px;
+    line-height: 32px;
+    height: 99px;
+}
+
+.blogCardProfileWrapper {
+    display: flex;
+    gap: 12px;
+}
+
+.blogCardProfileImage {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.blogCardProfileText {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--black);
+}
+
+/* Blog list */
+.blogListWrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--secondary-gray);
+    padding-bottom: 16px;
+}
+
+.blogListText {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.blogListIconWrapper {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
