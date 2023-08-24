@@ -4,4 +4,5 @@
     line-height: 24px;
     cursor: pointer;
     white-space: nowrap;
+    width: fit-content;
 }
