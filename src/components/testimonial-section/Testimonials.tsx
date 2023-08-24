@@ -13,6 +13,7 @@ interface TestimonialCardProps {
     position: string;
     src: string;
 }
+
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, comment, position, src }) => {
     return (
         <div className={styles.cardWrapper}>
