@@ -1,0 +1,95 @@
+.testimonialOverallWrapper {
+    padding: 100px 0px;
+    background-color: var(--dark-blue);
+    width: 100%;
+}
+
+.testimonialWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.testimonialHeadingWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.testimonialHeading {
+    color: white;
+    max-width: 716px;
+}
+
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.icon {
+    height: 72px;
+    width: 72px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.testimonialCardsWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Testimonial Card */
+.cardWrapper {
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 12px;
+    width: fit-content;
+    max-width: 270px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: fit-content;
+}
+
+.cardComment {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.cardBottomWrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.cardImage {
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.cardBottomTextsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cardName {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--dark-blue);
+}
+
+.cardPosition {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--dark-blue);
+}
