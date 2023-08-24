@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import BlogSection from './components/blog-section/BlogSection';
 import FeatureSection from './components/features-section/FeatureSection';
 import Hero from './components/hero-page/Hero';
 import ServiceSection from './components/service-section/ServiceSection';
@@ -12,6 +13,7 @@ function App() {
             <ServiceSection />
             <FeatureSection />
             <Testimonials />
+            <BlogSection />
         </div>
     );
 }
