@@ -1,0 +1,46 @@
+.emailSectionOverallWrapper {
+    padding-bottom: 84px;
+}
+
+.emailSectionWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    border-radius: 12px;
+    background-color: var(--dark-blue);
+    padding: 72px;
+}
+
+.emailSectionHeading {
+    color: var(--white);
+    max-width: 716px;
+}
+
+.emailSectionBottomWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.emailSectionInput {
+    height: 56px;
+    border: 2px solid var(--white);
+    border-radius: 240px;
+    background-color: var(--white);
+    min-width: 370px;
+    width: 100%;
+    padding-left: 32px;
+    padding-top: 4px;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.emailSectionInput::placeholder {
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--black);
+}

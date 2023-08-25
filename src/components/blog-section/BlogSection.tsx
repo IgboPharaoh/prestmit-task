@@ -96,7 +96,7 @@ const BlogSection = () => {
                                 />
                             </section>
                             <section className={styles.sectionButtonWrapper}>
-                                <Button name='Load more' border='1px solid #0A2640' backgroundColor='transparent' color={'#0A2640'} height='60px' />
+                                <Button name='Load more' border='2px solid #0A2640' backgroundColor='transparent' color={'#0A2640'} height='60px' />
                             </section>
                         </div>
                     </section>
