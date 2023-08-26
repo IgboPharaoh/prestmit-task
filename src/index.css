@@ -2,6 +2,7 @@
 
 :root {
     --dark-blue: #0a2640;
+    --primary-dark-blue: #1C3D5B;
     --dark-blue-drop: rgba(10, 38, 64, 0.8);
     --green: #65e4a3;
     --light-green: #009d10;
@@ -17,10 +18,15 @@
     --box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.08);
 }
 
-body {
+body,
+html,
+section,
+div,
+input span {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    vertical-align: baseline;
     font-family: 'Manrope', sans-serif;
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -42,4 +48,25 @@ p {
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@media (max-width: 1260px) {
+    h1 {
+        font-size: 42px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
 }
