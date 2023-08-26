@@ -9,7 +9,7 @@ import { ReactComponent as EyeIcon } from '../../assets/eye.svg';
 import { ReactComponent as SunIcon } from '../../assets/sun.svg';
 import { ReactComponent as FeatherIcon } from '../../assets/feather.svg';
 import { ReactComponent as BoxBarChart } from '../../assets/box-bar-chart.svg';
-import { ReactComponent as CircularSvg } from '../../assets/circular-chat.svg';
+import CircularSvgImage from '../../assets/circular-chat.svg';
 
 interface FeaturesListProps {
     text: string;
@@ -100,7 +100,7 @@ const FeatureSection = () => {
                                 <img src={Woman} alt='a young man answering a call' className={styles.FeatureSectionImage} />
                             </div>
                             <div className={`${styles.barChartWrapper} ${styles.circularChartWrapper}`}>
-                                <CircularSvg height='174px' width='174px' className={styles.circularChartImage} />
+                                <img src={CircularSvgImage} alt='' className={styles.circularChartImage} />
                                 <section className={styles.circularChartItemsWrapper}>
                                     <aside className={styles.spanAsideWrappers}>
                                         <section className={`${styles.spanBlue} ${styles.spanCircles}`}></section>
