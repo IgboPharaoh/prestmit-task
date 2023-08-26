@@ -22,3 +22,41 @@
 .navlinks:hover {
     text-decoration: underline;
 }
+
+.iconWrapper {
+    display: none;
+}
+
+.navlinksWrapper {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .headerWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .iconWrapper {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navlinksWrapper {
+        display: none;
+    }
+
+    .companiesLogo {
+        height: 28px;
+        width: fit-content;
+    }
+
+    .headerRightSection {
+        gap: 16px;
+    }
+}

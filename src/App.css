@@ -11,6 +11,31 @@
     align-items: center;
     justify-content: center;
 }
+
 .pageWrapper {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.mobileMenuWrapper {
+    display: none;
+    z-index: 100;
+}
+
+@media (max-width: 1260px) {
+    .pageWrapper {
+        padding: 0px 56px;
+    }
+}
+
+@media (max-width: 900px) {
+    .pageWrapper {
+        padding: 0px 32px;
+    }
+}
+
+@media (max-width: 590px) {
+    .pageWrapper {
+        padding: 0px 12px;
+    }
 }

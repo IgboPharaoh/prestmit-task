@@ -22,7 +22,7 @@ interface ChartBarsProps {
 const ChartBars: React.FC<ChartBarsProps> = ({ backgroundColor, width, text }) => {
     return (
         <div className={styles.chartBarWrapper}>
-            <div style={{ backgroundColor: backgroundColor, width: width }} className={styles.chartBar}></div>
+            <div style={{ backgroundColor: backgroundColor, maxWidth: width }} className={styles.chartBar}></div>
             {text ? <p className={styles.chartBarText}>{text}%</p> : null}
         </div>
     );
@@ -41,7 +41,7 @@ export const PercentageChart = () => {
     return (
         <ChartWrapper>
             <div className={styles.percentChartWrapper}>
-                <section className={styles.indicatorWrapper}>
+                <section className={styles.tipsWrapper}>
                     <ChartBars backgroundColor='#95abbc' width='54px' />
                     <ChartBars backgroundColor='#95abbc' width='54px' />
                     <ChartBars backgroundColor='#95abbc' width='54px' />
@@ -62,7 +62,7 @@ export const BarChart = () => {
     return (
         <ChartWrapper>
             <div className={styles.barChartWrapper}>
-                <BarChartSvg />
+                <BarChartSvg className={styles.barSvg}  />
             </div>
         </ChartWrapper>
     );
@@ -72,8 +72,8 @@ export const CircularChart = () => {
     return (
         <ChartWrapper>
             <div className={styles.circularChartWrapper}>
-                <CircularChartSvg />
-                <section className={styles.indicatorWrapper}>
+                <CircularChartSvg className={styles.circularSvg} />
+                <section className={styles.circularTipsWrapper}>
                     <ChartBars backgroundColor='#95abbc' width='72px' />
                     <ChartBars backgroundColor='#95abbc' width='68px' />
                     <ChartBars backgroundColor='#95abbc' width='76px' />

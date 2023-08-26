@@ -46,7 +46,7 @@ const FeaturesCard: React.FC<FeaturesCardProps> = ({ text, src, backgroundColor,
 
 const FeatureSection = () => {
     return (
-        <div>
+        <div className={styles.featureSectionPageWrapper}>
             <Wrapper>
                 <div className={styles.featureSectionOverallWrapper}>
                     <section className={styles.featureTopSection}>
@@ -55,7 +55,7 @@ const FeatureSection = () => {
                                 <img src={Man} alt='a young man answering a call' className={styles.FeatureSectionImage} />
                             </div>
                             <div className={styles.barChartWrapper}>
-                                <BoxBarChart />
+                                <BoxBarChart className={styles.barChartImage} />
                                 <section>
                                     <p className={styles.percentText}>30%</p>
                                     <p className={styles.percentSubText}>More income in June</p>
@@ -69,11 +69,13 @@ const FeatureSection = () => {
                                 <FeaturesList text='Advisor success customer launch party.' />
                                 <FeaturesList text='Business-to-consumer long tail.' />
                             </section>
-                            <Button name='Start now' backgroundColor='#0A2640' color='#ffffff' height='60px' />
+                            <section className={styles.sectionButtonWrapper}>
+                                <Button name='Start now' backgroundColor='#0A2640' color='#ffffff' height='60px' />
+                            </section>
                         </div>
                     </section>
 
-                    <section className={styles.featureTopSection}>
+                    <section className={`${styles.featureTopSection} ${styles.featureTopSection2}`}>
                         <div className={styles.featureTopRigtSection}>
                             <p className={styles.connectText}>We connect our customers with the best, and help them keep up-and stay open.</p>
                             <section className={`${styles.featureListsWrapper} ${styles.featuresCardsListWrapper}`}>
@@ -98,7 +100,7 @@ const FeatureSection = () => {
                                 <img src={Woman} alt='a young man answering a call' className={styles.FeatureSectionImage} />
                             </div>
                             <div className={`${styles.barChartWrapper} ${styles.circularChartWrapper}`}>
-                                <CircularSvg height='174px' width='174px' />
+                                <CircularSvg height='174px' width='174px' className={styles.circularChartImage} />
                                 <section className={styles.circularChartItemsWrapper}>
                                     <aside className={styles.spanAsideWrappers}>
                                         <section className={`${styles.spanBlue} ${styles.spanCircles}`}></section>

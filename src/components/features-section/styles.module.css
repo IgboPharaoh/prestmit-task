@@ -1,9 +1,14 @@
+.featureSectionPageWrapper {
+    width: 100%;
+}
+
 .featureSectionOverallWrapper {
     display: flex;
     flex-direction: column;
     padding: 120px 0px 180px;
     align-items: center;
     gap: 120px;
+    width: 100%;
 }
 
 .featureTopSection {
@@ -12,19 +17,22 @@
     width: 100%;
     height: fit-content;
     align-items: center;
+    gap: 42px;
 }
 
 .FeatureSectionImageWrapper {
-    width: 494px;
+    width: 100%;
     height: 506px;
+    max-width: 494px;
     border-radius: 24px;
     z-index: -20;
 }
 
 .FeatureSectionImage {
-    max-width: 100%;
+    max-height: 100%;
     height: 100%;
-    object-fit: contain;
+    width: 100%;
+    object-fit: cover;
     border-radius: 24px;
     z-index: -20;
     position: relative;
@@ -33,6 +41,7 @@
 .barChartWrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: fit-content;
     padding: 40px;
     background-color: var(--white);
@@ -40,7 +49,7 @@
     box-shadow: var(--box-shadow);
     gap: 20px;
     margin-top: -280px;
-    margin-left: 180px;
+    margin-left: 170px;
 }
 
 .percentText {
@@ -155,4 +164,155 @@
 
 .spanGray {
     background-color: var(--secondary-gray);
+}
+
+@media (max-width: 1260px) {
+    .featureTopSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .featureTopSection2 {
+        justify-items: end;
+    }
+
+    .FeatureSectionImageWrapper {
+        width: 100%;
+        height: 480px;
+        max-width: 420px;
+    }
+
+    .FeatureSectionImage {
+        max-height: 100%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .barChartImage {
+        height: 180px;
+        width: 130px;
+    }
+
+    .circularChartImage {
+        height: 140px;
+        width: 140px;
+    }
+
+    .barChartWrapper {
+        padding: 24px;
+        margin-top: -220px;
+    }
+
+    .circularChartWrapper {
+        margin-top: -164px;
+        margin-left: 48px;
+    }
+
+    .percentSubText {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .connectText {
+        font-size: 32px;
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 900px) {
+    .FeatureSectionImageWrapper {
+        width: 100%;
+        height: 400px;
+        max-width: 300px;
+    }
+
+    .barChartWrapper {
+        padding: 24px;
+        margin-top: -220px;
+        margin-left: 70px;
+    }
+
+    .circularChartWrapper {
+        margin-top: -164px;
+        margin-left: 48px;
+    }
+
+    .featuresListText {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .featureListsWrapper {
+        padding: 24px 0px 32px;
+    }
+
+    .featuresListWrapper {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .featureSectionOverallWrapper {
+        gap: 80px;
+        padding: 80px 0px;
+    }
+
+    .featureTopSection {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+
+    .connectText {
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .checkWrapper {
+        height: 30px;
+        width: 30px;
+    }
+
+    .featureListsWrapper {
+        gap: 16px;
+    }
+
+    .featuresListWrapper {
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .featuresListText {
+        font-size: 15px;
+    }
+
+    .barChartImage {
+        height: 150px;
+        width: 100px;
+    }
+
+    .circularChartImage {
+        height: 120px;
+        width: 120px;
+    }
+
+    .featureTopSection2 {
+        flex-direction: column;
+    }
+
+    .featuresCardWrapper {
+        padding: 14px;
+    }
+
+    .featuresCardText {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .sectionButtonWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
