@@ -1,5 +1,6 @@
 .emailSectionOverallWrapper {
     padding-bottom: 84px;
+    width: 100%;
 }
 
 .emailSectionWrapper {
@@ -11,12 +12,27 @@
     gap: 50px;
     border-radius: 12px;
     background-color: var(--dark-blue);
-    padding: 72px;
+    padding: 72px 0px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.emailSectionCircle {
+    height: 250px;
+    width: 500px;
+    background-color: var(--primary-dark-blue);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    border-bottom-left-radius: 150%;
+    border-top-left-radius: 0px;
 }
 
 .emailSectionHeading {
     color: var(--white);
     max-width: 716px;
+    z-index: 100;
 }
 
 .emailSectionBottomWrapper {
@@ -24,6 +40,9 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
+    width: 100%;
+    max-width: 716px;
+    z-index: 100;
 }
 
 .emailSectionInput {
@@ -31,7 +50,6 @@
     border: 2px solid var(--white);
     border-radius: 240px;
     background-color: var(--white);
-    min-width: 370px;
     width: 100%;
     padding-left: 32px;
     padding-top: 4px;
@@ -43,4 +61,49 @@
     font-size: 20px;
     line-height: 32px;
     color: var(--black);
+}
+
+@media (max-width: 900px) {
+    .emailSectionOverallWrapper {
+        width: 100%;
+    }
+
+    .emailSectionWrapper {
+        padding: 72px 24px;
+    }
+
+    .emailSectionInput {
+        height: 48px;
+        width: 100%;
+    }
+
+    .emailSectionBottomWrapper {
+        padding: 0px 0px;
+    }
+}
+
+@media (max-width: 550px) {
+    .emailSectionWrapper {
+        padding: 56px 16px;
+        gap: 36px;
+    }
+
+    .emailSectionInput {
+        height: 48px;
+        width: 100%;
+    }
+
+    .emailSectionBottomWrapper {
+        padding: 0px 16px;
+        flex-direction: column;
+    }
+
+    .emailSectionInput {
+        padding-top: 0px;
+    }
+
+    .emailSectionInput::placeholder {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
