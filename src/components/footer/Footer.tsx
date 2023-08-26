@@ -20,7 +20,14 @@ export const footerLinks: Array<FooterBlockProps> = [
             { link: 'Home' },
             {
                 link: 'Careers',
-                pill: <Button name='Hiring!' backgroundColor='#65E4A3' color={'#0A2640'} height='30px' fontSize='13px' padding='14px' />,
+                pill: (
+                    <Button
+                        name='Hiring!'
+                        backgroundColor='#65E4A3'
+                        color={'#0A2640'}
+                        otherStyles={{ fontSize: '13px', height: '30px', padding: '0px 14px' }}
+                    />
+                ),
             },
             { link: 'Services' },
         ],

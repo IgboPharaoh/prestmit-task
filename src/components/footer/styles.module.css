@@ -1,11 +1,13 @@
 .footerOverallWrapper {
     padding: 100px 0px;
+    width: 100%;
 }
 
 .footerWrapper {
     display: flex;
     align-items: flex-start;
-    gap: 179px;
+    justify-content: space-between;
+    gap: 36px;
 }
 
 .footerLeftSectionWrapper {
@@ -26,8 +28,10 @@
 
 .footerRightSectionWrapper {
     display: flex;
-    align-items: flex-start;
-    gap: 96px;
+    align-items: flex-end;
+    gap: 24px;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 /* Footer Block */
@@ -44,6 +48,7 @@
     line-height: 32px;
     font-weight: 700;
     margin: 0px;
+    width: fit-content;
 }
 
 .footerBlockLinksWrapper {
@@ -51,6 +56,7 @@
     gap: 0px;
     display: flex;
     gap: 12px;
+    width: fit-content;
 }
 
 .footerLinkText {
@@ -61,4 +67,24 @@
 
 .footerLinkText:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .footerOverallWrapper {
+        padding: 0px 0px 50px;
+    }
+
+    .footerWrapper {
+        flex-direction: column;
+    }
+
+    .footerRightSectionWrapper {
+        display: grid;
+        gap: 36px;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    .footerLeftSectionMainText {
+        padding: 24px 0px 32px;
+    }
 }
