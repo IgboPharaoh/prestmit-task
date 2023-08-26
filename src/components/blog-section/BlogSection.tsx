@@ -51,7 +51,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ name, content, cardSrc, profileSrc 
 
 const BlogSection = () => {
     return (
-        <div>
+        <div className={styles.blogSectionOverallWrapper}>
             <Wrapper>
                 <div className={styles.blogSectionWrapper}>
                     <section className={styles.blogTopSectionWrapper}>
