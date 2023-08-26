@@ -5,4 +5,6 @@
     cursor: pointer;
     white-space: nowrap;
     width: fit-content;
+    border-radius: 56px;
+    padding: 0px 56px;
 }
