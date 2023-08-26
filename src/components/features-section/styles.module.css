@@ -166,6 +166,12 @@
     background-color: var(--secondary-gray);
 }
 
+
+.circularChartImage {
+    height: 174px;
+    width: 174px;
+}
+
 @media (max-width: 1260px) {
     .featureTopSection {
         display: grid;
