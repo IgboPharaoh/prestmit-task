@@ -7,6 +7,7 @@ const EmailSection = () => {
     return (
         <div className={styles.emailSectionOverallWrapper}>
             <Wrapper>
+                <div className={styles.emailSectionCircle}></div>
                 <div className={styles.emailSectionWrapper}>
                     <h1 className={styles.emailSectionHeading}>An enterprise template to ramp up your company website</h1>
                     <section className={styles.emailSectionBottomWrapper}>
