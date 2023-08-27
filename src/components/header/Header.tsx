@@ -25,6 +25,7 @@ const Header: React.FC<HeaderProps> = ({ open, setOpen }) => {
         bottom: '40px',
         borderRadius: '32px',
         padding: '18px 18px',
+        marginTop: scrollPosition > 300 ? '12px' : '0px',
     };
 
     return (

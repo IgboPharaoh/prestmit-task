@@ -84,6 +84,13 @@
     line-height: 36px;
     font-weight: 700;
     color: var(--white);
+    text-decoration: none;
+    padding-bottom: 4px;
+}
+
+.serviceCardLink:focus,
+.serviceCardLink:hover {
+    color: var(--primary-gray);
 }
 
 @media (max-width: 900px) {

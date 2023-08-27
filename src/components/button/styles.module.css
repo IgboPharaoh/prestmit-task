@@ -8,3 +8,7 @@
     border-radius: 56px;
     padding: 0px 56px;
 }
+
+.buttonWrapper:hover, .buttonWrapper:focus {
+    opacity: 0.75;
+}
