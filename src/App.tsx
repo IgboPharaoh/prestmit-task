@@ -32,7 +32,7 @@ function App() {
                     <section
                         className={'mobileMenuWrapper'}
                         style={{
-                            top: scrollPosition > 300 ? '140px' : '120px',
+                            top: scrollPosition > 300 ? '110px' : '120px',
                         }}
                     >
                         <a href='#0' className={'navlinks'}>

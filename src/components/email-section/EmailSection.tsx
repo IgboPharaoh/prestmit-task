@@ -11,7 +11,7 @@ const EmailSection = () => {
                 <div className={styles.emailSectionWrapper}>
                     <h1 className={styles.emailSectionHeading}>An enterprise template to ramp up your company website</h1>
                     <section className={styles.emailSectionBottomWrapper}>
-                        <input type='text' placeholder='Your email address' className={styles.emailSectionInput} />
+                        <input type='email' placeholder='Your email address' className={styles.emailSectionInput} />
                         <Button name='Start now' backgroundColor='#65E4A3' color='#0A2640' height='60px' />
                     </section>
                 </div>

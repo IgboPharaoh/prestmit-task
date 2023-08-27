@@ -20,7 +20,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ src, title }) => {
             <p className={styles.serviceCardText}>{title}</p>
             <section className={styles.serviceCardBtnWrapper}>
                 <div className={styles.serviceCardBtnWrapperMobile}>
-                    <p className={styles.serviceCardLink}>Expore page</p>
+                    <a href='#0' className={styles.serviceCardLink}>Expore page</a>
                     <ForwardIcon />
                 </div>
             </section>
