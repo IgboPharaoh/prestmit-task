@@ -43,8 +43,8 @@ const FooterBlock: React.FC<FooterBlockProps> = ({ heading, links }) => {
         <div className={styles.footerBlockWrapper}>
             <h4 className={styles.footerBlockHeading}>{heading}</h4>
             <>
-                {links.map(({ link, pill }) => (
-                    <section key={link} className={styles.footerBlockLinksWrapper}>
+                {links.map(({ link, pill }, index) => (
+                    <section key={index} className={styles.footerBlockLinksWrapper}>
                         <a href='#0' className={`${styles.footerBlockHeading} ${styles.footerLinkText}`}>
                             {link}
                         </a>
@@ -72,7 +72,7 @@ const Footer = () => {
                     <section className={styles.footerRightSectionWrapper}>
                         {footerLinks.map(({ heading, links }) => {
                             return (
-                                <div className={styles.footerRightSectionWrapper}>
+                                <div key={heading} className={styles.footerRightSectionWrapper}>
                                     <FooterBlock heading={heading} links={links} />
                                 </div>
                             );
