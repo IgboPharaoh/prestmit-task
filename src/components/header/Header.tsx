@@ -25,12 +25,12 @@ const Header: React.FC<HeaderProps> = ({ open, setOpen }) => {
         bottom: '40px',
         borderRadius: '32px',
         padding: '18px 18px',
-        marginTop: scrollPosition > 300 ? '12px' : '0px',
+        marginTop: scrollPosition > 700 ? '12px' : '0px',
     };
 
     return (
         <Wrapper>
-            <div className={styles.headerWrapper} style={scrollPosition > 300 && width <= 768 ? scrollPositionStyles : {}}>
+            <div className={styles.headerWrapper} style={scrollPosition > 700 && width <= 768 ? scrollPositionStyles : {}}>
                 <Logo className={styles.companiesLogo} />
                 <section className={styles.headerRightSection}>
                     <section className={styles.navlinksWrapper}>

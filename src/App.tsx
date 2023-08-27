@@ -22,7 +22,7 @@ function App() {
                 style={{
                     width: '100%',
                     overflow: 'visible',
-                    position: scrollPosition > 300 && width <= 768 ? 'sticky' : 'static',
+                    position: scrollPosition > 700 && width <= 768 ? 'sticky' : 'static',
                     top: 0,
                     zIndex: '1000',
                 }}
