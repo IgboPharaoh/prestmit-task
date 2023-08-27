@@ -1,4 +1,5 @@
 import React from 'react';
+import { useWindowSizes } from '../utils';
 import styles from './styles.module.css';
 
 export interface ButtonProps {
@@ -11,28 +12,6 @@ export interface ButtonProps {
     fontSize?: string;
     otherStyles?: React.CSSProperties;
 }
-
-const getWindowSizes = () => {
-    const { innerWidth: width, innerHeight: height } = window;
-    return { width, height };
-};
-
-const useWindowSizes = () => {
-    const [windowSize, setwindowSize] = React.useState({ width: 0, height: 0 });
-
-    React.useEffect(() => {
-        setwindowSize(getWindowSizes());
-        function resize() {
-            setwindowSize(getWindowSizes());
-        }
-
-        window.addEventListener('resize', resize);
-
-        return () => window.removeEventListener('resize', resize);
-    }, []);
-
-    return windowSize;
-};
 
 const Button: React.FC<ButtonProps> = ({
     name,
