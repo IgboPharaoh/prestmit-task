@@ -83,7 +83,7 @@
         position: absolute;
         z-index: 200;
         top: 120px;
-        right: 12px;
+        right: 32px;
         border: 1px solid var(--dark-blue);
         background-color: var(--white);
     }
@@ -105,5 +105,9 @@
 @media (max-width: 590px) {
     .pageWrapper {
         padding: 0px 12px;
+    }
+
+    .mobileMenuWrapper {
+        right: 12px;
     }
 }
