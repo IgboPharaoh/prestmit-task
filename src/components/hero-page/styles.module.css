@@ -1,15 +1,3 @@
-.heroBox {
-    height: 520px;
-    width: 646px;
-    background-color: var(--light-gray);
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -10;
-    border-bottom-left-radius: 150%;
-    border-top-left-radius: 0px;
-}
-
 .heroWrapper {
     background-color: var(--white);
     width: 100%;
@@ -22,7 +10,7 @@
     justify-content: space-between;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 56px 0px 95px;
+    padding: 0px 0px 95px;
     gap: 56px;
 }
 
@@ -175,7 +163,6 @@
     display: flex;
     align-items: center;
     gap: 56px;
-    overflow: hidden;
     overflow: scroll;
 }
 
@@ -240,35 +227,5 @@
 
     .companiesLogo {
         height: 28px;
-    }
-
-    /* mobile header */
-    .mobileMenuWrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        padding: 18px;
-        border-radius: 12px;
-        width: 120px;
-        box-shadow: var(--box-shadow);
-        position: absolute;
-        z-index: 200;
-        top: 120px;
-        right: 12px;
-        border: 1px solid var(--dark-blue);
-        background-color: var(--white);
-    }
-
-    .navlinks {
-        font-family: 'Open Sans', sans-serif;
-        line-height: 28px;
-        font-size: 16px;
-        font-weight: 600;
-        color: var(--dark-blue);
-        text-decoration: none;
-    }
-
-    .navlinks:hover {
-        text-decoration: underline;
     }
 }
